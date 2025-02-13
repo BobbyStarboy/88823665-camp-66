@@ -16,7 +16,6 @@ Route::get('/home' ,
     [HomeController::class, 'index']);
 Route::get('/' ,
     [HomeController::class, 'index']);
-
 Route::get('/mycontroller/{id?}',
     [MyController::class,'myfunction']);
 
@@ -44,6 +43,8 @@ Route::put('/user',
     [UserController::class, 'edit_action']);
 Route::delete('/user',
     [UserController::class, 'delete']);
+    Route::post('/login' ,
+    [LoginController::class, 'login']);
 
 
 
